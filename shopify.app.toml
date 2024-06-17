@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "fec7682697c167c100175f0378fb91e2"
+name = "alertify-my-low-products"
+handle = "alertify-my-low-products"
+application_url = "https://decide-tear-rhode-wishing.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "my-first-developmental-store.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,write_products"
+
+[auth]
+redirect_urls = [
+  "https://decide-tear-rhode-wishing.trycloudflare.com/auth/callback",
+  "https://decide-tear-rhode-wishing.trycloudflare.com/auth/shopify/callback",
+  "https://decide-tear-rhode-wishing.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
